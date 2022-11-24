@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:workshop_4sim2223/SigninForm.dart';
+import 'package:workshop_4sim2223/home/forget_password.dart';
 import 'package:workshop_4sim2223/signin.dart';
 
 import 'my_games/my_games.dart';
@@ -16,9 +17,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Game game = Game(
-        "assets/images/dmc5.jpg",
-        "Devil May Cry 5",
+    final Game game = Game("assets/images/dmc5.jpg", "Devil May Cry 5",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
             "sed do eiusmod tempor incididunt ut "
             "labore et dolore magna aliqua. Ut enim ad minim veniam, "
@@ -31,13 +30,13 @@ class MyApp extends StatelessWidget {
         price: 200,
         quantity: 3000);
     return MaterialApp(
-      title: 'G-Store ESPRIT',
-      // home: Home(),
-      home: SigninForm()
-      //home: MyGames(),
-      // home: Signin(),
-      // home: Signup(),
-      // home: ProductDetails(game)
-    );
+        title: 'G-Store ESPRIT',
+        // home: Home(),
+        // home: SigninForm()
+        // home: MyGames(),
+        // home: Signin(),
+        // home: Signup(),
+        // home: ProductDetails(game)
+        home: ForgetPassword());
   }
 }
